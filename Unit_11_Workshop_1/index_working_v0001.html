@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Mobile And Web Technologies Workshop 11-jQuery.getJSON Flickr
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+
+		<script>
+
+		function imageDisplay() {
+			(
+				function () {
+				
+				var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+				var myTags = $('#searchTerm').val() ;
+				console.log (myTags);
+				$.getJSON (flickerAPI , {
+							tags: myTags ,
+							tagmode: "any" ,
+							format: "json"
+							})
+							.done(function (data) {
+								$.each( data.items , function (i , item) {
+									$( "<li>").attr("id" , 'image_' + i).appendTo("#images");
+									$( "<img>").attr("src", item.media.m).appendTo('#image_' + i);
+									if ( i === 3 )
+										{return false;
+										 $("#images").listview("refresh");
+									}
+								});
+							});
+									
+				}
+				
+				
+				)();
+				}
+
+		function clearAll ()
+			{
+			$("#images").empty();
+			}
+				
+		</script>
+	</head>
+	<body>
+		Mobile And Web<br/>
+		Technologies<br/>
+		Workshop 11<br/>
+		jQuery.getJSON<br/>
+		Flickr<br/>
+		<input type="text" id="searchTerm"> </input>
+		<button type = "submit" id="Push_Button" onclick="imageDisplay()">Click For Images</button>
+		
+		<div id="images_section">
+			<ul id="images">
+			
+			</ul>
+		
+		</div>
+		<button type = "submit" id="Push_Button" onclick="clearAll()">Clear</button>
+
+	</body>
+</html>

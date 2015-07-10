@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <!-- Said in notes had to specify character set...hope tag below suffices -->
+		<meta charset="utf-8">
+		<title>
+			Mobile And Web Technologies Activity 14-angular.js
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.css" />
+		
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery-ui.min.js">
+		</script>
+
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->		
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+		
+		<script type="text/javascript" src="js/angular.min.js"> 
+		</script>
+		
+		<script  type="text/javascript" src="js/myScripting.js">
+
+		</script>
+
+	</head>
+
+	<body ng-app>
+		<div data-role="page" class="ui-responsive-panel" id="mainpage">
+				<div data-role="header"  data-theme="f">
+					<div>
+					Mobile And Web<br/>
+					Technologies<br/>
+					Activity 14<br/>
+					angular.js<br/>
+					</div>
+
+				</div>
+				
+				<div data-role="content">
+					Java Score(goals): <input type="text" ng-model="javagoalscore" />{{'   '}}
+					Java Score(points): <input type="text" ng-model="javapointsscore" />{{'   '}}
+					CSS Score(goals): <input type="text" ng-model="cssgoalscore" />{{'   '}}
+					CSS Score(points): <input type="text" ng-model="csspointsscore" />{{'   '}}<br/>	
+
+					<p style="font-size:80px; font-weight: bold"><u>Half Time Score</u></p>
+					<p style="font-size:40px; font-weight: bold">Java Gaels {{' '+javagoalscore+' '}}-
+					              {{' '+javapointsscore+'   ('+((javagoalscore*3) + (javapointsscore*1))+')'}}
+						CSS Croaghs {{' '+cssgoalscore+' '}}-
+									{{' '+csspointsscore+'   ('+((cssgoalscore*3) + (csspointsscore*1))+')'}}
+					</p> 
+
+				</div>
+		</div>
+		
+	</body>
+</html>

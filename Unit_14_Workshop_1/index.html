@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html data-ng-app="app" lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+		<title>
+			Mobile And Web Technologies Workshop 14-Things To Do!
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.css" />
+		
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery-ui.min.js">
+		</script>
+
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->		
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+		
+		<script  type="text/javascript" src="js/angular.min.js">
+		</script>		
+		
+		<script  type="text/javascript" src="js/myScripting.js">
+		</script>
+		
+		<style>
+			.courseTable {
+						border: 5px solid black;
+						 }
+						 
+			.courseData
+						{
+						border: 2px solid black;
+						padding: 10px;
+						vertical-align: top;
+						horizontal-align: left;					
+						}
+						
+			.button	
+						{
+						font-family: Verdana,Arial,sans-serif; 
+						font-size: 1em
+						}
+		</style>
+
+	</head>
+
+	<body ng-controller="MyFirstController">
+		<div data-role="page" class="ui-responsive-panel" id="mainpage">
+				<div data-role="header"  data-theme="f">
+					<div>
+					Mobile And Web<br/>
+					Technologies<br/>
+					Workshop 14<br/>
+					Things To Do!<br/>
+					</div>
+
+				</div>
+				
+				<div data-role="content">
+					<div class="ui-widget">
+						
+						<div id="TaskList">
+							<h1>Things To Do!</h1>
+							<ul data-role = "listview" id="listOfTasks">
+								<li ng-repeat="task in taskList" ng-click="delete($index)" ng-mouseover="tooltip()"  title="Click On Task {{task.name}} To Delete It">
+									<p>Name: {{task.name}} </p>
+									<p>Desc: {{task.description}} </p>
+								</li>
+							
+							</ul>
+						</div>
+						<p></p>
+						<div class="ui-grid-a">
+							<div class="ui-block-a">
+									<button id="add" ng-click="newTask()">Add Task!</button>
+							</div>
+							<div class="ui-block-b">
+								
+								<button id="delete" ng-click="delete(0)" ng-mouseover="tooltip()"  title="Click This Button To Delete First Task In List">Delete Task!</button>
+							</div>
+						</div>
+						
+						<div id="editArea" style= "display: none;")>
+							<div data-role="fieldContain">
+							
+								Task Name<input type="text" ng-model="taskName"  id="taskName"/> {{' '}}
+							</div>
+						
+							<div data-role="fieldContain" >
+								Task Description<input type="text" ng-model="taskDescription" id="taskDescription"/> {{' '}}
+							</div>
+
+							<button id="addTheTask" ng-click="addTheTask()">Add This Task!</button>
+						
+						</div>
+						
+					</div>
+				</div>
+				<div data-role="footer">
+				</div>
+		</div>
+		
+	</body>
+</html>

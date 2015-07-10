@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Mobile And Web Technologies Workshop 10-Index Page
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+
+		<script type="text/javascript">
+		
+			console.log("starting...");
+			
+			//standard jQuery ajax technique to load an xml file
+			var xml;
+			$(document).ready(function() {
+				$.ajax({
+					type: "GET",
+					url: "LOLCatz.xml",
+					dataType: "xml",
+					success: xmlParser
+					});
+				});
+				
+			function xmlParser(data) {
+				xml = data;
+				
+				$(xml).find("kitteh").each(function () {
+					kitteh = $(this);
+					var name = $(kitteh).find("name").text();
+					var src  = $(kitteh).find("url").text();
+					var id   = $(kitteh).find("id").text();
+					
+					//debugging lines, just to make sure data is fetched as it should be
+					console.log("id  =" + id);
+					console.log("name=" + name);
+					console.log("url =" + src);
+					console.log("============");
+
+					$("#myList").append('<li><a href="#' + id + '">' + name + '</a></li>');
+					$("#mainpage").append('<div id="' + id + '">' + '<img src="' + src + '"> </div>');
+					});
+			}
+		</script>
+	</head>
+	<body>
+
+	<!-- <div data-role="page" id="mainpage"> -->
+	<div id="mainpage">	
+			<div data-role = "content">
+			<div class="primary-content">
+				<div data-demo-html="true">
+					Mobile And Web<br/>
+					Technologies<br/>
+					Workshop 10<br/>
+					<!-- <ul data-role="listview" data-filter="true" data-filter-reveal="true"> -->
+					<ul id="myList">
+				
+					</ul>
+				</div>
+			</div>
+			</div>
+	</div>
+	
+	</body>
+</html>

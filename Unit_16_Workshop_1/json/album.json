@@ -1,0 +1,19 @@
+{"albums" :  [
+				{
+				"artist": "Kate Bush",
+				"title": "Wuthering Heights",
+				"albumCoverUrl": "http://www.katebush.com/sites/default/files/imagecache/release_full/discography/Kate-Bush-Wuthering-Heights-467721.jpg"
+				} , 				
+				{
+				"artist": "Heather Nova",
+				"title": "Oyster",
+				"albumCoverUrl": "https://upload.wikimedia.org/wikipedia/en/2/2b/Heather_Nova_-_Oyster_US.jpg"
+				} ,				
+				{
+				"artist": "Tanita Tikaram",
+				"title": "Ancient Heart",
+				"albumCoverUrl": "http://cps-static.rovicorp.com/3/JPG_400/MI0002/351/MI0002351413.jpg?partner=allrovi.com"
+				}
+				]
+		}
+

@@ -1,0 +1,22 @@
+Error: [$rootScope:inprog] http://errors.angularjs.org/1.4.0/$rootScope/inprog?p0=%24apply
+    at Error (native)
+    at file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:6:416
+    at r (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:126:314)
+    at m.$get.m.$apply (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:134:292)
+    at m.MyFirstController.$scope.addTheTask (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/myScripting.js:23:20)
+    at fn (eval at <anonymous> (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:210:400), <anonymous>:2:221)
+    at Jc.(anonymous function).compile.d.on.f (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:250:394)
+    at m.$get.m.$eval (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:134:83)
+    at m.$get.m.$apply (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:134:309)
+    at HTMLButtonElement.<anonymous> (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:250:446)(anonymous function) @ angular.min.js:107$get @ angular.min.js:80$get.m.$apply @ angular.min.js:134MyFirstController.$scope.addTheTask @ myScripting.js:23fn @ VM3745:2Jc.(anonymous function).compile.d.on.f @ angular.min.js:250$get.m.$eval @ angular.min.js:134$get.m.$apply @ angular.min.js:134(anonymous function) @ angular.min.js:250n.event.dispatch @ jquery-2.1.1.min.js:3n.event.add.r.handle @ jquery-2.1.1.min.js:3
+angular.min.js:107 Error: [$rootScope:inprog] http://errors.angularjs.org/1.4.0/$rootScope/inprog?p0=%24apply
+    at Error (native)
+    at file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:6:416
+    at r (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:126:314)
+    at m.$get.m.$apply (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:134:292)
+    at m.MyFirstController.$scope.delete (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/myScripting.js:39:17)
+    at fn (eval at <anonymous> (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:210:400), <anonymous>:2:319)
+    at Jc.(anonymous function).compile.d.on.f (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:250:394)
+    at m.$get.m.$eval (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:134:83)
+    at m.$get.m.$apply (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:134:309)
+    at HTMLLIElement.<anonymous> (file://par-stg01/par-redirect$/frank.reynolds/My%20Documents/Mobile%20And%20Web%20Technologies/Unit_14_Workshop_1/js/angular.min.js:250:446)(anonymous function) @ angular.min.js:107$get @ angular.min.js:80$get.m.$apply @ angular.min.js:134MyFirstController.$scope.delete @ myScripting.js:39fn @ VM3739:2Jc.(anonymous function).compile.d.on.f @ angular.min.js:250$get.m.$eval @ angular.min.js:134$get.m.$apply @ angular.min.js:134(anonymous function) @ angular.min.js:250n.event.dispatch @ jquery-2.1.1.min.js:3n.event.add.r.handle @ jquery-2.1.1.min.js:3

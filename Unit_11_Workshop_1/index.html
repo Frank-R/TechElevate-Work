@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Mobile And Web Technologies Workshop 11-jQuery.getJSON Flickr
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+
+		<script>
+		
+		function init()
+			{
+			listCounter = 0;
+			imagesStart = 0;
+			imagesPerClick = 4;
+			imagesEnd = imagesStart + imagesPerClick - 1;
+			previousTags = '';
+			}
+
+		function imageDisplay() {
+			(
+				function () {
+				var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+				var myTags = $('#searchTerm').val() ;
+				console.log (myTags);
+				$.getJSON (flickerAPI , {
+							tags: myTags ,
+							tagmode: "any" ,
+							format: "json"
+							})
+							.done(function (data) {
+								$.each( data.items , function (j , item) {
+								
+									// If user changes their mind and chooses a different tag, reset start counter to zero
+									if ( myTags != previousTags)
+										{imagesStart = 0 ;}
+									
+									imagesEnd = imagesStart + imagesPerClick - 1;
+									
+									if (j >= imagesStart)
+										{
+										currentImage = 'image_' + listCounter ;
+										currentImageDiv  = 'imageDiv_' + listCounter;
+										currentImageLink = 'imageLink_' + listCounter;
+										
+										console.log("Value of j is " + j + " Value of imagesEnd is" + imagesEnd);
+										$( "<li>").attr("id" , currentImage).appendTo("#images");
+										
+										//haven't done pop up bit yet, just want to make sure I can get links to work
+										
+										$("<div>").attr("data-role" , "popup").attr("id" , currentImageDiv).appendTo('#popups');
+										$( "<img>").attr("src", item.media.m).appendTo('#' + currentImageDiv);
+										
+										
+										$("<a>").attr("data-rel" , "popup").attr("id" , currentImageLink).attr("href" , '#' + currentImageDiv).appendTo('#' + currentImage);
+										$( "<img>").attr("src", item.media.m).appendTo('#' + currentImageLink);
+										listCounter +=1 ;
+										//j += 1 ;
+										if ( j === imagesEnd )
+											{
+											 //before exiting, save tag user was using, and position, so if they
+											 //look for same tag again, will start from last image, not go back to zero
+											 console.log("Got into branch for imagesEnd");
+											 previousTags = myTags;
+											 imagesStart = imagesEnd + 1;
+											 return false;
+											}
+										}
+								});
+							});
+				}
+				
+				
+				)();
+				}
+
+		function clearAll ()
+			{
+			$("#images").empty();
+			init();
+			}
+				
+		</script>
+	</head>
+	<body onload="init()">
+		<div data-role=page id="mainpage">
+
+		Mobile And Web<br/>
+		Technologies<br/>
+		Workshop 11<br/>
+		jQuery.getJSON<br/>
+		Flickr<br/>
+		<input type="text" id="searchTerm"> </input>
+		<button type = "submit" id="Push_Button" onclick="imageDisplay()">Click For Images</button>
+		
+		<div id="images_section">
+			<ul data-role = "listview" id="images">
+			
+			</ul>
+		
+		</div>
+
+		
+		<button type = "submit" id="Push_Button" onclick="clearAll()">Clear</button>
+		</div>
+	</body>
+		
+		<div id="popups">
+		
+		</div>
+</html>

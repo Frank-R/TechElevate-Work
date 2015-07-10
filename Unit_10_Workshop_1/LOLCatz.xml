@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LolCatz>
+<kitteh>
+	<id>1</id>
+	<name>Ceiling Cat</name>
+	<!-- Deliberately commenting out url used in original file as when try to load it, get not found 
+	<url>http://upload.wikimedia.org/wikipedia/en/9/90/Ceiling_cat_no_text.gif</url> -->
+	<url>http://cdn.meme.am/images/300x/1112113.jpg</url>
+</kitteh>
+
+<kitteh>
+	<id>2</id>
+	<name>Basement Cat</name>
+	<!-- Deliberately commenting out url used in original file as when try to load it, page blocked
+	<url>http://i191.photobucket.com/albums/z37/beamerpi/TeeSting_s_Stuff/basement-cat-eats-souls.jpg</url> -->
+	<url>http://clubschadenfreude.files.wordpress.com/2012/11/basement-cat.jpg?w=549</url>
+</kitteh>
+
+
+<kitteh>
+	<id>3</id>
+	<name>Monorail Cat</name>
+	<!-- Deliberately commenting out url used in original file as when try to load it, page blocked
+	<url>http://i178.photobucket.com/albums/w263/Laudon1965/MonorailCat.jpg</url>-->
+	<url>http://ak1.polyvoreimg.com/cgi/img-set/cid/47883579/id/EqW4OGJWSyG2l1UbW25A1Q/size/l.jpg</url>
+</kitteh>
+
+<kitteh>
+	<id>4</id>
+	<name>Laser Kitteh</name>
+	<url>http://31.media.tumblr.com/II7NpYhKVobop9l1WLTAmnGMo1_500.jpg</url>
+</kitteh>
+</LolCatz>

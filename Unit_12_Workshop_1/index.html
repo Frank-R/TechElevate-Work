@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Mobile And Web Technologies Workshop 12-Side Panel Menu
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+
+	</head>
+
+	<body>
+		<div data-role="page" class="ui-responsive-panel" id="mainpage">
+		
+				<!-- Cheating: Cogged this directly from jQuery Mobile page -->
+				<!-- jQuery Mobile page also says to put panel BEFORE header, so trying that -->
+				<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="MenuPanel" data-theme="a">
+
+					<ul>
+						<li>Menu Item</li>
+						<li>Next Menu Item</li>
+						<li>Last Menu Item</li>
+						<li><a href="#mainpage" class="ui-btn ui-icon-home ui-btn-icon-left" data-rel="close">Home</a></li>
+					</ul>
+				</div>		
+		
+				<div data-role="header"  data-theme="f">
+					<div>
+					Mobile And Web<br/>
+					Technologies<br/>
+					Workshop 12<br/>
+					Side Panel<br/>
+					Menu<br/>
+					</div>
+					<div>
+					<a href="#MenuPanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Click For Menu</a>
+					</div>
+				</div>
+				
+				<div data-role="content">
+					<h1>
+					A Brief Explanation
+					</h1>
+					<p>
+					Tried to get a menu like on the jQuery page, one which pops up at the side and leaves the content on the screen:</br>
+					Instead, got a menu that overwrote everything including the header.</br>
+					Thought perhaps it was necessary to have a content frame with SOME content for it to work as it does on the jQuery mobile page, so tried that
+					</p>
+					<p>
+					And as you might have guessed, it didn't work.</br>
+					After a bit of looking around on the jQuery page, I found that they recommended having the panel before or after the header content and footer divs</br>
+					I appreciate that 90% of this course is what we can work out ourselves, but I think it could have and should have been made clearer in the workshop brief
+					</p>
+				</div>
+		</div>
+		
+
+
+	</body>
+</html>

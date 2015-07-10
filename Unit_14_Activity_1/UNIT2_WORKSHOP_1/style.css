@@ -1,0 +1,68 @@
+h1
+	{
+	color: blue;
+	
+	}
+	
+h2
+	{
+	font-family: Comic Sans MS ;
+	color: red;
+	
+	}
+	
+h3
+	{
+	font-family: Arial;
+	color: green;
+	
+	
+	}
+	
+p
+	{
+	
+	color: red;
+	}
+	
+div
+	{
+	font-size: 40px;
+	font-family: Script;
+	color: red;
+	}
+	
+ul
+	{
+	font-family: arial;
+	font-size: 30px;
+	color: black;
+	
+	}
+
+li
+	{
+	
+	display: inline;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Courier;
+	}
+
+a:link
+	{
+	color: black;
+	background-color: #888888;
+	}
+
+a:visited
+	{
+	 background-color: #888888;
+	 color: white;
+	}
+	
+a:hover
+	{
+	background-color: black;
+	color: white;
+	}

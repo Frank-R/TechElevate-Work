@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Mobile And Web Technologies Workshop 13-jQuery UI Widgets
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.css" />
+		
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery-ui.min.js">
+		</script>
+
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->		
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+		
+		<script>
+			$(function() {
+					var availableTags = [
+										"ActionScript" ,
+										"AppleScript",
+										"Asp" ,
+										"BASIC" ,
+										"C" ,
+										"C++" ,
+										"C#" ,
+										"Clojure" ,
+										"Cobol" ,
+										"ColdFusion" ,
+										"Erlang" ,
+										"Fortran" ,
+										"Groovy" ,
+										"Haskell" ,
+										"Java" ,
+										"Javascript" ,
+										"Lisp" ,
+										"Perl" ,
+										"Python" ,
+										"Ruby" ,
+										"Scala" ,
+										"Scheme"
+										];
+										
+					var availableTagsCased = [];
+ 					
+					for (i=0 ; i < availableTags.length ; i++)
+							{availableTagsCased[i] = availableTags[i].toUpperCase();}
+							
+					$( "#tags" ).autocomplete({source: availableTags});
+					
+					$( "#search").click( function () {
+											//DELIBERATELY emptying outputArea because ran into problems 
+											//with output being repeated when clicked on search button
+											$( "#outputArea").empty();
+					
+											var selectedTag = $( "#tags" ).val();
+											console.log("Got into click handler, selectedTag value is: " + selectedTag);
+											$( "#outputArea").append("The following courses are available in " + selectedTag + ":");
+											
+											var selectedTagCased = selectedTag.toUpperCase();
+											if ($.inArray(selectedTagCased , availableTagsCased) === -1)
+													{availableTags.push(selectedTag);
+													 availableTagsCased.push(selectedTagCased);}
+											});
+											
+											
+					//Blank the input field and the previous response, when someone clicks on the input field again
+					$( "#tags").click( function () {$( "#tags" ).val('');});
+					
+					});
+		</script>
+
+	</head>
+
+	<body>
+		<div data-role="page" class="ui-responsive-panel" id="mainpage">
+				<div data-role="header"  data-theme="f">
+					<div>
+					Mobile And Web<br/>
+					Technologies<br/>
+					Workshop 13<br/>
+					jQuery UI<br/>
+					Widgets<br/>
+					</div>
+					<!-- commenting out as may reuse the menu page, then again, may knot 
+					
+					<div>
+					<a href="#MenuPanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Click For Menu</a>
+					</div> -->
+				</div>
+				
+				<div data-role="content">
+					<div class="ui-widget">
+						<label for="tags">Tags: </label>
+						<input id="tags"> </input>
+						<button id="search">Search For Courses!</button>
+						<div id="outputArea">
+						</div>
+					</div>
+				</div>
+		</div>
+		
+				<!-- Cheating: Cogged this directly from jQuery Mobile page -->
+				<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="MenuPanel" data-theme="a">
+				
+				<!-- Below Is the original I wrote -->
+				<!-- <div class="panel left" data-display="reveal" data-role="panel" id="MenuPanel"> -->
+
+					<ul>
+						<li>Menu Item</li>
+						<li>Next Menu Item</li>
+						<li>Last Menu Item</li>
+						<!-- Commented out because when try to have a button for the return menu, it comes up in the header section when first load the page 
+						
+						<li><a href="#mainpage" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a></li> -->
+						<li><a href="#mainpage">Home</a>
+					</ul>
+				</div>
+
+	</body>
+</html>

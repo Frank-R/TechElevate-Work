@@ -1,0 +1,44 @@
+	
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			A Simple holder html file for running my jquery
+		</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js">
+		</script>
+		
+		<script type="text/javascript" src="clicked.js">
+		</script>		
+		<style>
+		body 
+			{
+			background-color: linen;
+			font-family: Arial ; 
+			font-size: 30px ;
+			}
+			
+		#hidden-vision	
+			{
+			display: none;
+			}
+
+		</style>
+	<body onload="init()">
+	Activity 2: Seeing The Hidden Visions!!!!!<br/>
+	Right...This is simply putting flesh on the skeleton we were given in the unit<br/>
+	"Simply"...hmmm, well, we'll see<br/>
+	
+	<div id="button-container">
+		<button type = "submit" id="click_button">SEE THE HIDDEN VISIONS!!!</button>
+	</div>
+	<div id = "hidden-vision">
+		<img src="http://www.pbfcomics.com/archive_b/PBF217-Magic_Eyes.gif">
+		</img>
+	</div>
+
+	
+
+	</body>
+</html>

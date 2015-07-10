@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html data-ng-app="myModule">
+	<head>
+	<base href="/Unit_16_Workshop_1/">
+	<meta charset="utf-8">
+		<title>
+			Mobile And Web Technologies Workshop 16-Angular With JSON
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.css" />
+		
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery-ui.min.js">
+		</script>
+
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->		
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+		
+		<script  type="text/javascript" src="js/angular.min.js">
+		</script>		
+		
+		<script  type="text/javascript" src="js/angular-route.min.js">
+		</script>
+		
+		<script  type="text/javascript" src="js/modules/myModule.js">
+		</script>
+		
+
+	</head>
+	<body>
+		<div data-role="page" id="mainpage">
+				<div data-role="header"  data-theme="f">
+					<div>
+					Mobile And Web<br/>
+					Technologies<br/>
+					Workshop 16<br/>
+					Angular<br/>
+					With JSON<br/>
+					</div>
+
+				</div>
+				
+				<div data-role="content">
+					<!-- <div id="container"> -->
+					<div ng-contoller="albumController">
+						<div ng-view></div>
+					</div>
+				</div>
+				
+				<div data-role="footer">
+				</div>
+		</div>
+		
+	</body> 
+	
+</html>

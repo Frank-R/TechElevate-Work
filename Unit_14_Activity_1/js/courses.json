@@ -1,0 +1,137 @@
+{
+"Courses" : [
+
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "Fortran"]
+			},
+			{
+				"Title": "Java and JavaScript",
+				"details": "An intensive course dealing with Java and JavaScript, with a particular focus on web applications.",
+				"prerequisites": "A basic understanding of coding is assumed. Familiarity with object oriented design would be helpful"
+				"tags": [ "Java" , "JavaScript" , "JQuery" , "JSON"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			},
+			{
+				"Title": "Legacy Programming",
+				"details": "A course dealing with coding for applications written in legacy languages and hardware.",
+				"prerequisites": "A basic understanding of coding is assumed"
+				"tags": [ "BASIC" , "COBOL" , "FORTRAN"]
+			}			
+			]
+}

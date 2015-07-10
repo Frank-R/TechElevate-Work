@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+		<title>
+			Mobile And Web Technologies Workshop 13-jQuery UI Widgets
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.css" />
+		
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery-ui.min.js">
+		</script>
+
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->		
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+		
+		<script  type="text/javascript" src="js/courses.js">
+		</script>		
+		
+		<script  type="text/javascript" src="js/myScripting.js">
+		</script>
+		
+		<style>
+			.courseTable {
+						border: 5px solid black;
+						 }
+						 
+			.courseData
+						{
+						border: 2px solid black;
+						padding: 10px;
+						vertical-align: top;
+						horizontal-align: left;					
+						}
+						
+			.button	
+						{
+						font-family: Verdana,Arial,sans-serif; 
+						font-size: 1em
+						}
+		</style>
+
+	</head>
+
+	<body>
+		<div data-role="page" class="ui-responsive-panel" id="mainpage">
+				<div data-role="header"  data-theme="f">
+					<div>
+					Mobile And Web<br/>
+					Technologies<br/>
+					Workshop 13<br/>
+					jQuery UI<br/>
+					Widgets<br/>
+					</div>
+
+				</div>
+				
+				<div data-role="content">
+					<div class="ui-widget">
+						<label for="searchTags">Tags: </label>
+						<input id="searchTags"> </input>
+						<button id="search">Search For Courses!</button>
+
+						<div id="outputArea">
+						</div>
+						
+						<div class="ui-grid-b">
+							<div class="ui-block-a">
+									<button id="add">Add Course</button>
+							</div>
+							<div class="ui-block-b">
+								<!-- Tried various font styling to get edit and delete buttons looking similar to add -->
+								<!--<select name="edit" id="edit" style="font-family: Verdana,Arial,sans-serif; font-size: 1em">-->
+								<!--
+								<label for="edit" class="select"></label>
+								<select name="edit" id="edit">
+										<option value="edit">Edit Course</option>
+									</select>-->
+								
+								<button id="edit">Edit Course</button>
+							</div>
+							<div class="ui-block-c">
+									<button id="delete">Delete Course</button>
+							</div>
+						</div>
+						
+						<div id="editArea">
+						
+						</div
+						
+					</div>
+				</div>
+				<div data-role="footer">
+				</div>
+		</div>
+		
+	</body>
+</html>

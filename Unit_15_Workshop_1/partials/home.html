@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-ng-app="myModule" lang="en">
+	<head>
+	<base href="/Unit_15_Workshop_1/">
+	<meta charset="utf-8">
+		<title>
+			Mobile And Web Technologies Workshop 15-Passing Data In Angular
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui.css" />
+		
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery-ui.min.js">
+		</script>
+
+		<!-- Just including the jQuery mobile stuff because I like the look of it -->		
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+		
+		<script  type="text/javascript" src="js/angular.min.js">
+		</script>		
+		
+		<script  type="text/javascript" src="js/angular-route.min.js">
+		</script>
+		
+		<script  type="text/javascript" src="js/modules/myModule.js">
+		</script>
+		
+
+	</head>
+	<body ng-controller="MainController">
+		<div data-role="page" class="ui-responsive-panel" id="mainpage">
+				<div data-role="header"  data-theme="f">
+					<div>
+					Mobile And Web<br/>
+					Technologies<br/>
+					Workshop 15<br/>
+					Passing Data<br/>
+					In Angular<br/>
+					</div>
+					<div>
+					<ul style="display:inline-block">
+						<li>
+							<a href="#home" ng-click="setRoute('home')">Home</a>
+						</li>
+						<li>
+							<a href="#faq">FAQ</a>
+						</li>	
+						<li>
+							<a href="#categories">Categories</a>
+						</li>						
+					</ul>
+					</div>
+
+				</div>
+				
+				<div data-role="content">
+					<div id="container">
+						<div ng-view></div>
+					</div>
+				</div>
+				
+				<div data-role="footer">
+				</div>
+		</div>
+		
+	</body> 
+	
+</html>
+

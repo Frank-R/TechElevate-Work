@@ -1,0 +1,77 @@
+<!--
+* Author: Frank Reynolds
+* Assignment: TE2.0 Mobile Web Technologies, Digital Skills Academy
+* Student ID: xxxxx
+* Date : 2015/06/25
+* Ref: website link to code referenced or the book, authors name and page number
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			TE2.0 Mobile Web Technologies, Digital Skills Academy
+		</title>
+
+		<!-- Lines from theme roller for custom theme -->
+		<link rel="stylesheet" href="themes/Frank_Reynolds_TE2_MWT_1_Theme.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<!-- Locally storing these files -->
+		<link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.5.min.css" />
+		<script src="themes/js/jquery-1.11.1.min.js"></script>
+		<script src="themes/js/jquery.mobile-1.4.5.min.js"></script>
+		
+		<script  type="text/javascript" src="js/courses.js"></script>
+		
+		<script src="js/myScripting.js"></script>
+
+	</head>
+
+	<body onload="init()">
+		<div data-role="page" class="ui-responsive-panel" id="mainpage">
+		
+
+				<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="MenuPanel" data-theme="a">
+
+					<ul>
+						<li>Menu Item</li>
+						<li>Next Menu Item</li>
+						<li>Last Menu Item</li>
+						<li><a href="#mainpage" class="ui-btn ui-icon-home ui-btn-icon-left" data-rel="close">Home</a></li>
+					</ul>
+				</div>		
+		
+				<div data-role="header">
+					<div>
+						<h1>
+						TE2.0 Mobile Web Technologies, Digital Skills Academy<br/>
+						</h1>
+					</div>
+					<div>
+					<a href="#MenuPanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Click For Menu</a>
+					</div>
+				</div>
+				
+				<div data-role="content" data-theme="a">
+					<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-autodividers="true" id="theList">
+				
+					</ul>
+				</div>
+				
+				<div data-role="footer">
+				</div>
+		</div>
+		
+		<div data-role="page" id="itemDetails">
+		
+		
+		</div>
+		
+
+
+	</body>
+</html>

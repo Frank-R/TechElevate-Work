@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Mobile And Web Technologies Workshop 10-Index Page
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js">
+		</script>
+
+		<script type="text/javascript">
+		
+			console.log("starting...");
+			
+			//standard jQuery ajax technique to load an xml file
+			var xml;
+			$(document).ready(function() {
+				$.ajax({
+					type: "GET",
+					url: "LOLCatz.xml",
+					dataType: "xml",
+					success: xmlParser
+					});
+				});
+				
+			function xmlParser(data) {
+				xml = data;
+				
+				$(xml).find("kitteh").each(function () {
+					kitteh = $(this);
+					var name = $(kitteh).find("name").text();
+					var src  = $(kitteh).find("url").text();
+					var id   = $(kitteh).find("id").text();
+					
+					$("#myList").append('<li><a href="#' + id + '" data-transition="slideup">' + name + '</a></li>');
+
+					//HTML for image divs is verbose, so declaring lines as array, to make (slightly) more readable
+					//Will chain them together for display on page
+					
+					var divHTML = "";
+					var divHTMLLines = [ '<div data-role="page" id="' + id + '">' ,
+											'Mobile And Web<br/>Technologies<br/>Workshop 10<br/>' ,
+											'<a href="#mainpage">' ,
+												'<img src="' + src + '">' ,
+												'<br/>Click to go back!' ,
+											'</a>' ,
+										'</div>' ];					
+					
+					for (i= 0; i < divHTMLLines.length ; i++) 
+						{divHTML = divHTML + divHTMLLines[i]; }
+						
+					//using after, because when used append, divs were added inside main page div
+					//which meant they didn't appear when the links were clicked
+					$("#mainpage").after(divHTML);
+					});
+			}
+		</script>
+	</head>
+	<body>
+
+	<!-- <div data-role="page" id="mainpage"> -->
+	<div data-role="page" id="mainpage">	
+			<div class="primary-content">
+				<div data-demo-html="true">
+					Mobile And Web<br/>
+					Technologies<br/>
+					Workshop 10<br/>
+					
+					<ul id="myList" data-role="listview" data-filter="true" data-filter-reveal="true">
+					<!-- <ul id="myList"> -->
+				
+					</ul>
+				</div>
+			</div>
+	<!-- the end div tag below encloses the mainpage div tag above -->
+	</div>
+	
+	<div id ="subpages" data-demo-html="true">
+	
+	</div>
+
+	</body>
+</html>
